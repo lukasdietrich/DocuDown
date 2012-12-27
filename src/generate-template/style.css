@@ -1,0 +1,134 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono|Droid+Sans|Droid+Serif);
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    max-height: 100%;
+    width: 180px;
+
+    padding: 0;
+    background-color: #E9E9E9;
+    border-style: solid;
+    border-width: 0 1px 0 0;
+    border-color: #808080;
+
+    overflow: auto;
+}
+
+nav > input[type=text] {
+    display: block;
+    width: 100%;
+    margin: 0 0 5px 0;
+    padding: 3px 5px;
+    border-style: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+
+    margin: 0;
+    padding: 3px 5px;
+
+    color: #404040;
+    font-family: 'Droid Sans', sans-serif;
+    text-decoration: none;
+
+    border-style: solid;
+    border-width: 0 2px 0 0;
+    border-color: transparent;
+
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+nav ul li a:hover {
+    border-color: #808080;
+    background-color: #DEDEDE;
+}
+
+div.content {
+    position: relative;
+    margin-left: 180px;
+    min-height: 100%;
+
+    background-color: #FFF;
+}
+
+/************
+ * MarkDown *
+ ************/
+
+div.content {
+    font-family: 'Droid Sans', sans-serif;
+    font-style: normal;
+
+    padding: 5px;
+
+    color: #444;
+}
+
+div.content a, div.content a:visited {
+    color: #444;
+    -webkit-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+div.content a:hover, div.content a:active {
+    color: #D64D0C;
+}
+
+div.content h1, div.content h2,
+div.content h3, div.content h4,
+div.content h5, div.content h6 {
+    position: relative;
+
+    font-family: 'Droid Serif', serif;
+    font-weight: bold;
+
+    color: #333;
+}
+
+div.content code, div.content pre {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+div.content code {
+    display: inline-block;
+    padding: 1px 5px;
+    border-style: solid;
+    border-color: #D64D0C;
+    border-width: 0 0 0 5px;
+    background-color: #EFEFEF;
+}
+
+div.content pre > code {
+    width: 100%;
+    padding: 5px;
+}
